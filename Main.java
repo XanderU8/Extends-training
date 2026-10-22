@@ -1,20 +1,20 @@
 import java.time.Year;
+import java.util.concurrent.Callable;
 
 class Main{
     public static void main(String[] args) {
 
-        Vehicle vehicle1 = new Vehicle("Mercedes", 2010);
+            Cat cat1 = new Cat("Cat");
+            Dog dog1 = new Dog("Dog");
+            Cow cow1 = new Cow("Cow");
 
-        Car car1 = new Car("BMW", 2015, 4);
-        Car car2 = new Car("Audi", 2018, 2);
+            cat1.showCatInfo();
+            cat1.makeSound();
 
-        Motorcycle motorcycle1 = new Motorcycle("Susuki", 2020, false);
+            dog1.showDogInfo();
+            dog1.makeSound();
 
-        vehicle1.showVehicleInfo();
-
-        car1.showCarInfo();
-        car2.showCarInfo();
-
-        motorcycle1.showMotorcycleInfo();
+            cow1.showCowInfo();
+            cow1.makeSound();
     }
 }
