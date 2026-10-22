@@ -1,23 +1,20 @@
+import java.time.Year;
+
 class Main{
     public static void main(String[] args) {
 
-        SmartDevice device1 = new SmartDevice("Iphone",1200,true);
-        SmartDevice device2 = new SmartDevice("Android",800,false);
+        Vehicle vehicle1 = new Vehicle("Mercedes", 2010);
 
-        SmartLight lightDevice1 = new SmartLight("Lamp", 25,false,3);
-        SmartLight lightDevice2 = new SmartLight("Second Lamp",30, true, 5);
+        Car car1 = new Car("BMW", 2015, 4);
+        Car car2 = new Car("Audi", 2018, 2);
 
-        SpeakerDevice speakerDevice1 = new SpeakerDevice("JBL", 200,true, 85);
-        SpeakerDevice speakerDevice2 = new SpeakerDevice("Sony", 500,false, 50);
+        Motorcycle motorcycle1 = new Motorcycle("Susuki", 2020, false);
 
+        vehicle1.showVehicleInfo();
 
-        device1.showStatusDeviceInfo();
-        device2.showStatusDeviceInfo();
+        car1.showCarInfo();
+        car2.showCarInfo();
 
-        lightDevice1.showStatusLight();
-        lightDevice2.showStatusLight();
-
-        speakerDevice1.showSpeakerInfo();
-        speakerDevice2.showSpeakerInfo();
+        motorcycle1.showMotorcycleInfo();
     }
 }
