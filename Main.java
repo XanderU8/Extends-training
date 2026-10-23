@@ -1,20 +1,26 @@
-import java.time.Year;
-import java.util.concurrent.Callable;
-
 class Main{
     public static void main(String[] args) {
 
-            Cat cat1 = new Cat("Cat");
-            Dog dog1 = new Dog("Dog");
-            Cow cow1 = new Cow("Cow");
 
-            cat1.showCatInfo();
-            cat1.makeSound();
 
-            dog1.showDogInfo();
-            dog1.makeSound();
 
-            cow1.showCowInfo();
-            cow1.makeSound();
+
+
+
+        SavingsAccounts savingsAccounts1 = new SavingsAccounts("Mykita", 1000, 200, 100,0.5);
+
+
+
+
+
+        savingsAccounts1.applyInterest();
+        savingsAccounts1.applyDepositAmount();
+        savingsAccounts1.applyWithdrawAmount();
+        savingsAccounts1.showSavingAccountInfo();
+
+
+
+
+
     }
 }
